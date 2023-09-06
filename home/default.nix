@@ -48,6 +48,13 @@
   
     #librewolf
     qq
+    jetbrains.pycharm-community
+    #vscode-with-extensions
+    obsidian
+    python3
+    arianna
+    mullvad-browser
+    clash-verge
     # archives
     #zip
     #xz
@@ -134,6 +141,14 @@
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
     };
+  };
+  
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      llvm-vs-code-extensions.vscode-clangd
+      mkhl.direnv
+    ];
   };
 
   #programs.bash = {
