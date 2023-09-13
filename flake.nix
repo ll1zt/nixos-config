@@ -6,6 +6,8 @@
   inputs = {
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    #devshell.url = "github:nixos/devshell";
+
     # home-manager，用于管理用户配置
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
@@ -15,6 +17,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     
+
     nixosConfigurations = {
       #     nixos-rebuild switch --flake .#nixos
       "nixos" = nixpkgs.lib.nixosSystem {
@@ -30,6 +33,9 @@
 	    home-manager.users.lllzt = import ./home;
           }
         ];
+
+	# DevShell 配置
+        #environment.devShell = devshell.devShell;
       };
     };
   };

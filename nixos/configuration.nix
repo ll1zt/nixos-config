@@ -9,6 +9,17 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
+  
+  vscode.user = "danbst";
+  vscode.homeDir = "/home/danbst";
+  vscode.extensions = with pkgs.vscode-extensions; [
+    ms-vscode.cpptools
+    llvm-vs-code-extensions.vscode-clangd
+  ];
+  nixpkgs.latestPackages = [
+    "vscode"
+    "vscode-extensions"
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -141,7 +152,7 @@
   #  wget
   git
   neovim
-  
+   
   #python3
   ];
 
