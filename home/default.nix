@@ -55,6 +55,9 @@
     arianna
     mullvad-browser
     clash-verge
+    joshuto
+    libreoffice
+    parsec-bin
     # archives
     #zip
     #xz

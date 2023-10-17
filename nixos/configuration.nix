@@ -143,7 +143,6 @@
   git
   neovim
   vscode 
-  libgccjit
 
   #python3
   ];
