@@ -57,7 +57,8 @@
     clash-verge
     joshuto
     libreoffice
-    parsec-bin
+    #parsec-bin
+    rustdesk
     # archives
     #zip
     #xz
