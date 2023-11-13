@@ -143,7 +143,8 @@
   git
   neovim
   vscode 
-
+  anydesk
+  teamviewer
   #python3
   ];
 

@@ -58,7 +58,7 @@
     joshuto
     libreoffice
     #parsec-bin
-    rustdesk
+    #rustdesk
     # archives
     #zip
     #xz
